@@ -1,5 +1,6 @@
 ## React + TypeScript + Jest(+ Enzyme)
 - Todolist를 만들며 타입스크립트와 유닛테스트를 연습한다.
+- 테스트코드가 없는 기능은 구현하지 않는다.
 
 ## 적용 기술
 - React.js
