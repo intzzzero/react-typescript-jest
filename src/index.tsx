@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Hello from './Components/Hello';
+import TodoForm from './Pages/TodoForm';
 
-ReactDOM.render(<Hello name='TypeScript' enthusiasmLevel={10} />, document.getElementById('root'));
+ReactDOM.render(<TodoForm />, document.getElementById('root'));
