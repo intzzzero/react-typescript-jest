@@ -2,10 +2,18 @@ import React from 'react';
 import styled from 'styled-components';
 
 const TodoForm = () => {
+	const [ todo, setTodo ] = React.useState('');
+
+	const addTodo = React.useCallback(e => {
+		setTodo(e.target.value);
+	}, []);
+
+	console.log(todo);
+
 	return (
 		<TodoContainer>
 			<form>
-				<input placeholder='할 일을 입력하세요' />
+				<input placeholder='할 일을 입력하세요' value={todo} onChange={addTodo} />
 				<button type='submit'>등록</button>
 			</form>
 		</TodoContainer>
